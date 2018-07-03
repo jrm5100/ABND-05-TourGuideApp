@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorPrimaryLight">#BBDEFB</color>
+    <color name="colorAccent">#9E9E9E</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+
+    <!-- Background color for the beer category -->
+    <color name="category_beer">#ffcc80</color>
+
+    <!-- Background color for the wine category -->
+    <color name="category_wine">#ce93d8</color>
+
+    <!-- Background color for the food category -->
+    <color name="category_food">#a5d6a7</color>
+
+    <!-- Background color for the sights category -->
+    <color name="category_sights">#90caf9</color>
+</resources>
