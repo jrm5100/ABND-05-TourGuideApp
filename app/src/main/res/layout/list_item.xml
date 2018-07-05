@@ -7,75 +7,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/list_item_height"
-    android:background="@color/colorPrimary"
-    android:minHeight="@dimen/list_item_height">
+    android:background="@color/colorPrimary">
 
     <ImageView
         android:id="@+id/photo"
-        android:layout_width="@dimen/list_item_photo_width"
-        android:layout_height="@dimen/list_item_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@android:color/white"/>
 
-    <RelativeLayout
-        android:id="@+id/text_container"
+    <TextView
+        android:id="@+id/name_text_view"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/list_item_height"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:layout_toRightOf="@id/photo"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorPrimaryText"
+        android:textStyle="bold"
         android:background="@color/category_beer"
-        android:orientation="vertical">
+        tools:text="Name of a Thing" />
 
-        <TextView
-            android:id="@+id/name_text_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:gravity="center_horizontal"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/colorPrimaryText"
-            android:textStyle="bold"
-            tools:text="Name of a Thing" />
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="8dp"
+        android:padding="8dp"
+        android:gravity="end"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/web_button"
+            android:layout_width="@dimen/list_item_button_size"
+            android:layout_height="@dimen/list_item_button_size"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_web" />
 
-            <ImageButton
-                android:id="@+id/web_button"
-                android:layout_width="@dimen/list_item_button_size"
-                android:layout_height="@dimen/list_item_button_size"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:background="@color/colorPrimaryDark"
-                android:tint="@android:color/white"
-                app:srcCompat="@drawable/ic_web" />
+        <ImageButton
+            android:id="@+id/phone_button"
+            android:layout_width="@dimen/list_item_button_size"
+            android:layout_height="@dimen/list_item_button_size"
+            android:layout_marginEnd="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_local_phone" />
 
-            <ImageButton
-                android:id="@+id/phone_button"
-                android:layout_width="@dimen/list_item_button_size"
-                android:layout_height="@dimen/list_item_button_size"
-                android:layout_marginEnd="16dp"
-                android:background="@color/colorPrimaryDark"
-                android:tint="@android:color/white"
-                app:srcCompat="@drawable/ic_local_phone" />
+        <ImageButton
+            android:id="@+id/map_button"
+            android:layout_width="@dimen/list_item_button_size"
+            android:layout_height="@dimen/list_item_button_size"
+            android:background="@color/colorPrimaryDark"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_navigation" />
+    </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/map_button"
-                android:layout_width="@dimen/list_item_button_size"
-                android:layout_height="@dimen/list_item_button_size"
-                android:layout_marginEnd="16dp"
-                android:background="@color/colorPrimaryDark"
-                android:tint="@android:color/white"
-                app:srcCompat="@drawable/ic_navigation" />
-        </LinearLayout>
-
-    </RelativeLayout>
 </RelativeLayout>

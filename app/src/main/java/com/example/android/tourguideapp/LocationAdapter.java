@@ -99,9 +99,12 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         // Set the theme color
         // Find the color that the resource ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
-        // Set the background color of the text container View
-        View textContainer = listItemView.findViewById(R.id.parent_layout);
-        textContainer.setBackgroundColor(color);
+        // Set the background color of the name
+        nameTextView.setBackgroundColor(color);
+        // Set the background color of the buttons
+        webButton.setBackgroundColor(color);
+        phoneButton.setBackgroundColor(color);
+        mapButton.setBackgroundColor(color);
 
         return listItemView;
     }

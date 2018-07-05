@@ -6,11 +6,7 @@
     <dimen name="appbar_padding_top">8dp</dimen>
 
     <!-- Height of each list item -->
-    <dimen name="list_item_height">96dp</dimen>
-    <!-- Width of list item photos -->
-    <dimen name="list_item_photo_width">144dp</dimen>
+    <dimen name="list_item_height">144dp</dimen>
     <!-- List item button size -->
     <dimen name="list_item_button_size">48dp</dimen>
-    <!-- Padding around default images -->
-    <dimen name="default_photo_padding">16dp</dimen>
 </resources>
