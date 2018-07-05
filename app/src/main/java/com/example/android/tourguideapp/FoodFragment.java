@@ -23,6 +23,21 @@ public class FoodFragment extends Fragment {
 
         // Create a list of locations
         final ArrayList<Location> locations = new ArrayList<Location>();
+        locations.add(new Location(R.string.food_name_aah,
+                40.8310544, -77.8885427,
+                "http://www.americanalehouse.net/", "(814) 237-9701"));
+        locations.add(new Location(R.string.food_name_champs,
+                40.8078421, -77.8965042,
+                "http://www.champssportsgrill.net/", "(814) 234-7700"));
+        locations.add(new Location(R.string.food_name_hiway,
+                40.8078231, -77.8982898,
+                "http://www.dantesinc.com/", "(814) 237-0375"));
+        locations.add(new Location(R.string.food_name_waffleshop,
+                40.8033282, -77.8836266,
+                "http://www.originalwaffleshop.net/", "(814) 238-7460"));
+        locations.add(new Location(R.string.food_name_arena,
+                40.8053461, -77.893799,
+                "http://www.thearenabarandgrill.com/", "(814) 237-8833"));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

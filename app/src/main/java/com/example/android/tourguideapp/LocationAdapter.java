@@ -94,15 +94,13 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         } else {
             // Set the default photo
             imageView.setImageResource(mDefaultPhotoId);
-            int padding_in_px = getContext().getResources().getDimensionPixelSize(R.dimen.default_photo_padding);
-            imageView.setPadding(padding_in_px, padding_in_px, padding_in_px, padding_in_px);
         }
 
-        // Set the theme color for the list item
-        View textContainer = listItemView.findViewById(R.id.text_container);
+        // Set the theme color
         // Find the color that the resource ID maps to
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
         // Set the background color of the text container View
+        View textContainer = listItemView.findViewById(R.id.parent_layout);
         textContainer.setBackgroundColor(color);
 
         return listItemView;
