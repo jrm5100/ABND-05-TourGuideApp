@@ -23,13 +23,6 @@ public class WineFragment extends Fragment {
 
         // Create a list of locations
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

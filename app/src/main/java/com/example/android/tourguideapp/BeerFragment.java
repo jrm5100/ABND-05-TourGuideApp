@@ -23,13 +23,9 @@ public class BeerFragment extends Fragment {
 
         // Create a list of locations
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
-        locations.add(new Location());
+        locations.add(new Location(R.string.beer_name_ottos,
+                40.8110117, -77.9144131,
+                "http://ottospubandbrewery.com/", "(814) 867-6886"));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

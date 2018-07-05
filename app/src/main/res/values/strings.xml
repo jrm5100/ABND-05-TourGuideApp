@@ -6,7 +6,5 @@
     <string name="category_wine">Wine</string>
     <string name="category_food">Food</string>
     <string name="category_sights">Sights</string>
-    <string name="placeholder_name">Example Location</string>
-    <string name="placeholder_description">This is a fake restaurant serving food.  It specializes in some specific type of food.</string>
-    <string name="placeholder_address">123 Fake St, State College, PA 16803</string>
+    <string name="beer_name_ottos">Otto\'s Brewery</string>
 </resources>

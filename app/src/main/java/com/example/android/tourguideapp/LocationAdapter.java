@@ -1,13 +1,12 @@
 package com.example.android.tourguideapp;
 
 import android.content.Context;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -42,19 +41,50 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         }
 
         // Get the {@link Location} object located at this position in the list
-        Location currentLocation = getItem(position);
+        final Location currentLocation = getItem(position);
 
         // Set the name in the name TextView in the list_item.xml layout
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_text_view);
         nameTextView.setText(currentLocation.getNameId());
 
-        // Set the description in the description TextView in the list_item.xml layout
-        TextView descriptionTextView = (TextView) listItemView.findViewById(R.id.description_text_view);
-        descriptionTextView.setText(currentLocation.getDescriptionId());
+        // Set web button
+        ImageButton webButton = (ImageButton) listItemView.findViewById(R.id.web_button);
+        if (currentLocation.hasWebsite()) {
+            webButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    getContext().startActivity(currentLocation.getWebIntent());
+                }
+            });
+        } else {
+            webButton.setClickable(false);
+            webButton.setEnabled(false);
+            webButton.setVisibility(View.INVISIBLE);
+        }
 
-        // Set the address in the description TextView in the list_item.xml layout
-        TextView addressTextView = (TextView) listItemView.findViewById(R.id.address_text_view);
-        addressTextView.setText(currentLocation.getAddressId());
+        // Set phone button
+        ImageButton phoneButton = (ImageButton) listItemView.findViewById(R.id.phone_button);
+        if (currentLocation.hasPhoneNum()) {
+            phoneButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    getContext().startActivity(currentLocation.getPhoneIntent());
+                }
+            });
+        } else {
+            phoneButton.setClickable(false);
+            phoneButton.setEnabled(false);
+            phoneButton.setVisibility(View.INVISIBLE);
+        }
+
+        // Set map button
+        ImageButton mapButton = (ImageButton) listItemView.findViewById(R.id.map_button);
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getContext().startActivity(currentLocation.getMapIntent());
+                }
+            });
 
         // Get the photo in the ImageView
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.photo);
@@ -75,8 +105,6 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         // Set the background color of the text container View
         textContainer.setBackgroundColor(color);
 
-        // Return the whole list item layout (containing 2 TextViews) so that it can be shown in
-        // the ListView.
         return listItemView;
     }
 }
