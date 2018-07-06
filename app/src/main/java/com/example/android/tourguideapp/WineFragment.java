@@ -25,13 +25,16 @@ public class WineFragment extends Fragment {
         final ArrayList<Location> locations = new ArrayList<Location>();
         locations.add(new Location(R.string.wine_name_hv,
                 40.7682327, -77.9714247,
-                "http://thehappyvalleywinery.com/", "(814) 308-8756"));
+                "http://thehappyvalleywinery.com/", "(814) 308-8756",
+                R.drawable.wine_happy_valley));
         locations.add(new Location(R.string.wine_name_seven_mountains,
                 40.7758518, -77.8629853,
-                "http://www.sevenmountainswinecellars.com/", "(814) 808-6635"));
+                "http://www.sevenmountainswinecellars.com/", "(814) 808-6635",
+                R.drawable.wine_seven_mountains));
         locations.add(new Location(R.string.wine_name_mn,
                 40.7914771, -77.955252,
-                "http://www.mtnittanywinery.com/", "(814) 466-6373"));
+                "http://www.mtnittanywinery.com/", "(814) 466-6373",
+                R.drawable.wine_mount_nittany));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

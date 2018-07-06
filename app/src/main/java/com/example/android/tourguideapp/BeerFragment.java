@@ -25,13 +25,16 @@ public class BeerFragment extends Fragment {
         final ArrayList<Location> locations = new ArrayList<Location>();
         locations.add(new Location(R.string.beer_name_ottos,
                 40.8110117, -77.9144131,
-                "http://ottospubandbrewery.com/", "(814) 867-6886"));
+                "http://ottospubandbrewery.com/", "(814) 867-6886",
+                R.drawable.beer_ottos));
         locations.add(new Location(R.string.beer_name_hvbc,
                 40.806804, -77.9230246,
-                "http://happyvalleybrewingcompany.com//", "(814) 234-4406"));
+                "http://happyvalleybrewingcompany.com//", "(814) 234-4406",
+                R.drawable.beer_happy_valley));
         locations.add(new Location(R.string.beer_name_rh,
                 40.915655, -77.7304961,
-                "http://robinhoodbrewingco.com/", "(814) 357-8399"));
+                "http://robinhoodbrewingco.com/", "(814) 357-8399",
+                R.drawable.beer_robin_hood));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
