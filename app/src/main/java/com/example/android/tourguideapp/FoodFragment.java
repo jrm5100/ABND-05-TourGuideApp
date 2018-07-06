@@ -42,7 +42,7 @@ public class FoodFragment extends Fragment {
                 40.8053461, -77.893799,
                 "http://www.thearenabarandgrill.com/", "(814) 237-8833"));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link LocationAdapter}, whose data source is a list of {@link Locations}s. The
         // adapter knows how to create list items for each item in the list.
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_food, R.drawable.food);
 
@@ -51,8 +51,8 @@ public class FoodFragment extends Fragment {
         // word_list.xml layout file.
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link LocationAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link Location} in the list.
         listView.setAdapter(adapter);
 
         return rootView;
