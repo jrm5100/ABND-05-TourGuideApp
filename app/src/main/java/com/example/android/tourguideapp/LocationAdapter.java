@@ -94,6 +94,9 @@ public class LocationAdapter extends ArrayAdapter<Location> {
         } else {
             // Set the default photo
             imageView.setImageResource(mDefaultPhotoId);
+            // Set padding
+            int padding_in_px = getContext().getResources().getDimensionPixelSize(R.dimen.default_photo_padding);
+            imageView.setPadding(padding_in_px, padding_in_px, padding_in_px, padding_in_px);
         }
 
         // Set the theme color
