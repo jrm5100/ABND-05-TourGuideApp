@@ -23,14 +23,13 @@ public class SightsFragment extends Fragment {
 
         // Create a list of locations
         final ArrayList<Location> locations = new ArrayList<Location>();
-        locations.add(new Location(R.string.sights_name_lionshrine, 40.7914771, -77.955252, R.drawable.sights_lion_shrine));
-        locations.add(new Location(R.string.sights_name_lionshrine, 40.7914771, -77.955252, R.drawable.sights_lion_shrine));
-        locations.add(new Location(R.string.sights_name_lionshrine, 40.7914771, -77.955252, R.drawable.sights_lion_shrine));
-        locations.add(new Location(R.string.sights_name_lionshrine, 40.7914771, -77.955252, R.drawable.sights_lion_shrine));
-        locations.add(new Location(R.string.sights_name_lionshrine, 40.7914771, -77.955252, R.drawable.sights_lion_shrine));
-        locations.add(new Location(R.string.sights_name_lionshrine, 40.7914771, -77.955252, R.drawable.sights_lion_shrine));
-        locations.add(new Location(R.string.sights_name_lionshrine, 40.7914771, -77.955252, R.drawable.sights_lion_shrine));
-        locations.add(new Location(R.string.sights_name_lionshrine, 40.7914771, -77.955252));
+        locations.add(new Location(R.string.sights_name_lionshrine, 40.796712, -77.8711102, R.drawable.sights_lion_shrine));
+        locations.add(new Location(R.string.sights_name_beaverstadium, 40.8121958, -77.858291, R.drawable.sights_lion_shrine));
+        locations.add(new Location(R.string.sights_name_oldmain, 40.7964727, -77.865005, R.drawable.sights_lion_shrine));
+        locations.add(new Location(R.string.sights_name_creamery, 40.8037251, -77.8645545,
+                "http://www.creamery.psu.edu", "(814) 865-7535", R.drawable.sights_lion_shrine));
+        locations.add(new Location(R.string.sights_name_obelisk, 40.7955591, -77.8654855, R.drawable.sights_lion_shrine));
+
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations, R.color.category_sights, R.drawable.binoculars);

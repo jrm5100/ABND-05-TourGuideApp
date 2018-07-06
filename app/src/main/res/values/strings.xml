@@ -18,4 +18,8 @@
     <string name="food_name_waffleshop">The Original Waffle Shop North</string>
     <string name="food_name_arena">Arena Bar and Grill</string>
     <string name="sights_name_lionshrine">Nittany Lion Shrine</string>
+    <string name="sights_name_beaverstadium">Beaver Stadium</string>
+    <string name="sights_name_oldmain">Old Main</string>
+    <string name="sights_name_obelisk">The Penn State Obelisk</string>
+    <string name="sights_name_creamery">The Berkey Creamery</string>
 </resources>
